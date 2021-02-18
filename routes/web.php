@@ -15,6 +15,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::resource('user', 'UserController');
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/','UserController@index');

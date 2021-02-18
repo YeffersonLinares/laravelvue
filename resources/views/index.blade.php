@@ -10,9 +10,11 @@
         <th>opciones</th>
         </thead>
         <tbody>
-            <td>PruebaName</td>
-            <td>PruebaEmail</td>
-            <td>op</td>
+            @foreach ($users as $row)
+            <td>{{ $row->name }}</td>
+            <td>{{ $row->email }}</td>
+            <td>Opciones</td>
+            @endforeach
         </tbody>
     </table>
 </div>
