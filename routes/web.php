@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::resource('user', 'UserController');
 
 Route::get('/','UserController@index');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
